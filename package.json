@@ -1,0 +1,37 @@
+{
+  "name": "ele",
+  "version": "0.6.5",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "publish": "electron-builder -p always",
+    "macwin": "electron-builder --mac --win",
+    "macwin-p": "electron-builder --mac --win -p always"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xflihaibo/electrom-demo.git"
+  },
+  "devDependencies": {
+    "electron": "^6.0.12",
+    "electron-builder": "^21.2.0",
+    "electron-updater": "^4.1.2"
+  },
+  "build": {
+    "appId": "com.github.iffy.electronupdaterexample",
+    "mac": {
+      "category": "your.app.category.type",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-log": "^3.0.8"
+  }
+}
